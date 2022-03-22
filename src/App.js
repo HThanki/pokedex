@@ -6,9 +6,9 @@ import CaughtPokemon from "./CaughtPokemon";
 const App = () => {
   return (
     <div>
-      <Logo />
-      <BestPokemon />
-      <CaughtPokemon />
+      <Logo appName="Pokedex" />
+      <BestPokemon abilities={["Anticipation", "Adaptability", "Run-Away"]} />
+      <CaughtPokemon date={new Date().toLocaleDateString()} />
     </div>
   );
 };
